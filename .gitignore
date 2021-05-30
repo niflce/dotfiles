@@ -1,0 +1,12 @@
+.emacs.d/auto-save-list
+.emacs.d/tutorial
+.emacs.d/url
+.emacs.d/elpa
+.emacs.d/elpa-*
+.emacs.d/eshell
+.emacs.d/recentf
+.emacs.d/tramp
+.emacs.d/lisp/*~
+.emacs.d/lisp/#*
+.emacs.d/*~
+.emacs.d/#*

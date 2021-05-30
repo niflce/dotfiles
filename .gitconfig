@@ -1,0 +1,17 @@
+[user]
+	name = niflce
+	email = niflndce@gmail.com
+[alias]
+	b = branch
+	s = status -sb
+	c = checkout
+	l = log --graph --pretty='format:%C(red)%d%C(reset) %C(yellow)%h%C(reset) %ar %C(green)%aN%C(reset) %s' 
+
+	a = add .
+	cm = commit -m ','
+	gh = push origin gh-pages
+	m = push origin main
+
+	shit = !git a && git cm && git gh
+	fuck = !git a && git cm && git m
+

@@ -1,0 +1,21 @@
+## See 'man tor', or https://www.torproject.org/docs/tor-manual.html,
+## https://www.torproject.org/docs/faq#torrc
+
+AvoidDiskWrites 1
+#CookieAuthentication 1
+DormantCanceledByStartup 1
+Log notice stdout
+
+HTTPTunnelPort <ip:port>
+Socks5Proxy <ip:port>
+
+#ExcludeNodes {cn}, {hk}, {mo}, {kp}, {ir}, {sy}, {pk}, {cu}, {vn}, {ru}, {by}, {sa}
+#StrictNodes 1
+
+UseBridges 1
+Bridge <pts> <ip:port> <fingerprint> url=<url> front=<front>
+ClientTransportPlugin meek_lite,obfs2,obfs3,obfs4,scramblesuit exec </path/to/pts>
+
+DataDirectory </path/to/data>
+GeoIPFile </path/to/data/geoip>
+GeoIPv6File </path/to/data/geoip6>
