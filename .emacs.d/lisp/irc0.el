@@ -5,8 +5,11 @@
 (setq erc-server "irc.libera.chat"
       erc-port "6697")
 (setq erc-hide-list '("JOIN" "PART" "QUIT" "MODE" "NICK" "KICK" "TOPIC"))
+(setq erc-track-exclude-types '("JOIN" "PART" "QUIT" "MODE" "NICK" "KICK" "333" "353"))
+
 (setq erc-autojoin-channels-alist
-      '(( "libera.chat" "#libera" "##chat" "#linux" "#emacs")))
+      '(("libera.chat" "#libera" "##chat" "#linux" "#archlinux" "#emacs")
+        ("oftc.net" "#oftc")))
 
 (with-eval-after-load 'erc
   ;; erc hack for gnutls for client cert.
